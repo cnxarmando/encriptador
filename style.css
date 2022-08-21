@@ -234,14 +234,14 @@ textarea {
 
   textarea {
     width: 100%;
-    height: 40%;
+    height: 20%;
   }
   
   .botoes {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
   }
 
   .botao-descriptografar, .botao-criptografar {
@@ -256,11 +256,11 @@ textarea {
     cursor: pointer;
     text-transform: uppercase;
     transition: 0.7s;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
   }
   
   .conteudo-saida {
-    margin: 1rem 0;
+    margin: 0.5rem 0;
   }
   
   .caixa-botao-copiar {
