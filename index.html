@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Decodificador</title>
+    <title>Encriptador</title>
   </head>
   <body>
     <header>
@@ -15,6 +21,7 @@
         viewBox="0 0 120 48"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        alt="Logo"
       >
         <path
           fill-rule="evenodd"
@@ -28,9 +35,7 @@
       <section class="conteudo-entrada">
         <form action="decodificador" method="post">
           <label for="texto">Digite seu texto</label>
-          <textarea name="" id="texto" cols="30" rows="10">
-            
-          </textarea>
+          <textarea name="" id="input-texto" cols="30" rows="10" > </textarea>
           <p class="informacao-de-texto">
             <svg
               width="16"
@@ -47,14 +52,31 @@
             Apenas letras minúsculas e sem acento
           </p>
           <div class="botoes">
-            <input class="botao-criptografar" type="submit" value="Criptografar" />
-            <input class="botao-descriptografar" type="submit" value="Descriptografar" />
+            <input
+              class="botao-criptografar"
+              type="button"
+              value="Criptografar"
+              onclick="btnencriptar()"
+            />
+            <input
+              class="botao-descriptografar"
+              type="button"
+              value="Descriptografar"
+              onclick="btndesencriptar()"
+            />
           </div>
         </form>
       </section>
       <section class="conteudo-saida">
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <div class="mensagem-encriptada">
+        <textarea
+          id="mensagem"
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          style="display: none"
+        ></textarea>
+        <div class="caixa-imagem">
           <svg
             width="336"
             height="304"
@@ -601,7 +623,7 @@
           <p>Digite um texto que você deseja criptografar ou descriptografar</p>
         </div>
         <div class="caixa-botao-copiar">
-          <input class="botao-copiar" type="button" value="Copiar" />
+          <input class="botao-copiar" type="button" value="Copiar" onclick="copiar()" />
         </div>
       </section>
     </main>

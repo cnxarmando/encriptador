@@ -17,7 +17,8 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'inter', sans-serif;
+  font-weight: bold;
   background: var(--color-background); 
   height: 100%;
   width: 100%;
@@ -53,15 +54,6 @@ main {
   flex-direction: column;
   margin: 10.8rem 0 4rem 24rem;
   padding: 0 1rem;
-}
-
-.conteudo-saida {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  margin: 4rem 4rem 4rem 8rem;
-  border-radius: 1rem;
-  padding: 0 1rem;  
 }
 
 textarea {
@@ -116,6 +108,28 @@ textarea {
   color: var(--color-text-primary);
 }
 
+.conteudo-saida {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 4rem 4rem 4rem 8rem;
+  border-radius: 1rem;
+  padding: 0 1rem;  
+}
+
+.caixa-imagem {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto-saida {
+  border: none;
+}
 
 .caixa-botao-copiar {
   width: 80%;
