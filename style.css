@@ -44,7 +44,6 @@ label {
 
 main {
   width: 100%;
-  height: 80vh;
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
@@ -58,7 +57,6 @@ main {
 
 textarea {
   width: 100%;
-  height: 80%;
   border: 1px solid var(--color-text-primary);
   border-radius: 1rem;
   padding: 1rem;
@@ -119,7 +117,6 @@ textarea {
 
 .caixa-imagem {
   width: 100%;
-  height: 100%;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
@@ -189,7 +186,7 @@ textarea {
   }
 
   .conteudo-entrada {
-    height: 65vh;
+    
     margin: 1rem 0 1rem 0;
   }
 
@@ -203,7 +200,10 @@ textarea {
   }
 
   .caixa-imagem {
-    display: none;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
   }
 
   .caixa-botao-copiar {
@@ -214,8 +214,8 @@ textarea {
 @media screen and (max-width: 700px) {
   
   main {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     width: 90%;
     margin: 0 auto;
   }
@@ -234,7 +234,6 @@ textarea {
 
   textarea {
     width: 100%;
-    height: 20%;
   }
   
   .botoes {
@@ -260,7 +259,11 @@ textarea {
   }
   
   .conteudo-saida {
-    margin: 0.5rem 0;
+    margin: 3rem 0;
+  }
+
+  .caixa-imagem {
+    display: none;
   }
   
   .caixa-botao-copiar {

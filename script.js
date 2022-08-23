@@ -73,7 +73,7 @@ function limpar() {
   document.querySelector("#mensagem").style.display = "none"; 
   document.querySelector(".caixa-botao-copiar").style.display = "none";
 
-  if(innerWidth < 1200) {
+  if(innerWidth < 700) {
     imagem.style.display = "none";
   }
 }
